@@ -1,1 +1,163 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+}
+
+section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 25vw;
+  padding: 4%;
+}
+
+section .card img {
+  width: 50px;
+  margin-bottom: 10%;
+}
+
+section .card h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 30px;
+  color: #f2f2f2;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20%;
+}
+
+section .card p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 40%;
+}
+
+section .one {
+  background-color: #e38826;
+}
+
+section .one button {
+  border: 2px solid #f2f2f2;
+  width: 120px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  color: #e38826;
+  cursor: pointer;
+}
+
+section .one button:hover {
+  background: none;
+  color: #f2f2f2;
+}
+
+section .two {
+  background-color: #006970;
+}
+
+section .two button {
+  border: 2px solid #f2f2f2;
+  width: 120px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  color: #006970;
+  cursor: pointer;
+}
+
+section .two button:hover {
+  background: none;
+  color: #f2f2f2;
+}
+
+section .three {
+  background-color: #004241;
+}
+
+section .three button {
+  border: 2px solid #f2f2f2;
+  width: 120px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  color: #004241;
+  cursor: pointer;
+}
+
+section .three button:hover {
+  background: none;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 567px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    padding: 10%;
+  }
+  section .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: 90vw;
+    padding: 15%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

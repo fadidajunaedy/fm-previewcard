@@ -1,0 +1,61 @@
+@mixin cardStyle() {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 25vw;
+        padding: 4%;
+
+        img {
+            width: 50px;
+            margin-bottom: 10%;
+        }
+        h2 {
+            font-family: 'Big Shoulders Display', sans-serif;
+            font-size: 30px;
+            color: $veryLightGray;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20%;
+        }
+        p {
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            color: $transWhite;
+            margin-bottom: 40%;
+        }
+        
+    }
+}
+
+@mixin buttonStyle($color) {
+    button {
+        border: 2px solid $veryLightGray;
+        width: 120px;
+        padding: 12px;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 25px;
+        background-color: $veryLightGray;
+        color: $color;
+        cursor: pointer;
+
+        &:hover {
+            background: none;
+            color: $veryLightGray;
+        }
+    }
+}
+
+@mixin mobileStyle {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 90vw;
+        padding: 15%;
+        
+    }
+}

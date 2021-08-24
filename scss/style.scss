@@ -1,0 +1,51 @@
+@import 'mixin';
+@import 'variable';
+@import 'font';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10%;
+
+        @include cardStyle();
+
+        .one {
+            @include buttonStyle($brightOrange);
+            background-color: $brightOrange;
+        }
+
+        .two {
+            @include buttonStyle($darkCyan);
+            background-color: $darkCyan;
+        }
+
+        .three {
+            @include buttonStyle($veryDarkCyan);
+            background-color: $veryDarkCyan;
+        }
+}
+
+@media screen and (max-width:567px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 10%;
+        @include mobileStyle();
+    }
+}
